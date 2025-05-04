@@ -1,0 +1,68 @@
+/* Booking list container */
+.booking-list {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Individual booking card */
+  .booking-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Booking info text */
+  .booking-info {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+  
+  /* Buttons container */
+  .booking-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Accept button */
+  .accept-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .accept-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Reject button */
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .reject-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Optional: loading or empty message */
+  .empty-message {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+  }
+  

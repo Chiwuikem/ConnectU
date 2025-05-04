@@ -1,0 +1,107 @@
+.profile-page {
+    min-height: 100vh;
+    padding: 40px;
+    background-color: #f0f0f0;
+    color: #333;
+    /* Or use a different image */
+    /* background-image: url('../assets/profile-background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h2,h3 {
+    color: #148aff;
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  input[type="file"]{
+    margin: 10px 0;
+  }
+
+  
+  /* Optional spacing for gallery */
+  .provider-gallery-section {
+    margin-top: 20px;
+  }
+  
+  .spinner-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.sidebar {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 280px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+.dropdown-toggle {
+  width: 100%;
+  background-color: #141fef;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #2977e5;
+}
+
+.confirmed-booking-card {
+  background-color: #ecf0f1;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.empty-message {
+  font-style: italic;
+  color: #777;
+}

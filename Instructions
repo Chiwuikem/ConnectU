@@ -1,0 +1,21 @@
+WHEN USING CODESPACE in Browser:
+For any Changes you want to commit
+  -open terminal and type git add .
+
+Using CodeSpace in Visual Studio Code:
+For any Changes you want to commit
+  -Make sure to save the file you edited
+  -open terminal and type git add .
+  -git commit -m "Message you want"
+  -git push origin main
+
+
+
+Troubleshooting:
+git pull origin main: If your you dont have all the files in the repository due to someone making changes
+git pull --rebase origin main: If you have already made changes and your files don't match changes made by someone.
+
+npm install 
+npm install firebase
+npm install react-router-dom
+react-router-dom@latest

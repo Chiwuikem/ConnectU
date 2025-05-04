@@ -1,0 +1,181 @@
+.home-page {
+    background-image: url('../assets/vahid-kanani-4-QaKPwndmw-unsplash.jpg'); /* Path from css folder to assets folder */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* This color will show if the image doesn't cover the entire viewport */
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding:20px;
+    box-sizing: border-box;
+}
+.top-center-text {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* center horizontally */
+    align-items: center;  /* top align */
+    text-align: center;
+    margin-top: 100px;
+    /* transform: translate(-70%, -10%);  left & up  */
+  }
+  .navbar {
+    position: absolute;
+    top:20px;
+    right:20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index:10;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* UberEats green */
+  }
+
+
+  .nav-links a {
+    margin-left: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .signup-btn {
+    background-color: #3516fc;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #000000;
+  }
+  .login-btn {
+    background-color: #3516fc;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+  }
+  
+  .login-btn:hover {
+    background-color: #000000;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+
+Search Bar Styles
+.search-bar-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.search-bar {
+    width: 400px;
+    max-width: 90%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+.search-bar:focus {
+    border-color: #5e5df0;
+    box-shadow: 0 2px 10px rgba(94, 93, 240, 0.3);
+  }
+
+  Provider display on home page 
+  
+ /* Gallery container holding the provider cards */
+.provider-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: flex-start; /* Distribute space across the row */
+  margin: 20px auto;
+  max-width: 1200px; /* Limit max width */
+}
+
+/* Provider card styling */
+.provider-card {
+  width: 300px; /* Fixed width of the provider card */
+  height: 300px; /* Fixed height for consistency */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect to slightly scale the card */
+.provider-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image container */
+.provider-main-img-container {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+}
+
+/* Image styling */
+.provider-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits nicely without stretching */
+}
+
+/* Provider description or name */
+.provider-name {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  height: 12.5%;
+}
+
+/* Zig-zag effect using nth-child */
+.provider-list .provider-card:nth-child(odd) {
+  align-self: auto; /* Left alignment for odd items */
+}
+
+.provider-list .provider-card:nth-child(even) {
+  align-self: auto; /* Right alignment for even items */
+}
+
+.load-more-btn {
+  background-color: #3516fc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.load-more-btn:hover {
+  background-color: #000000;
+}
